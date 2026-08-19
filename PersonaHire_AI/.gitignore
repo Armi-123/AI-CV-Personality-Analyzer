@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+data/raw/*
+data/processed/*
+!data/raw/README.md
+!data/processed/README.md
+
+# Trained models
+models/*.pkl
+models/*.joblib
+
+# Database
+database/*.db
+
+# Generated reports
+reports/*
+
+# OS
+.DS_Store
+Thumbs.db
