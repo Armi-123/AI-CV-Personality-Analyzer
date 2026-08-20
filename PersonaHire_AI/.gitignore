@@ -30,3 +30,11 @@ reports/*
 # OS
 .DS_Store
 Thumbs.db
+
+
+data/raw/*
+data/processed/*
+models/*.pkl
+models/*.joblib
+database/*.db
+.env
