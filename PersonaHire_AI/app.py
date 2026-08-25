@@ -29,7 +29,6 @@ Supported CV formats:
     - DOCX
 """
 
-
 # ============================================================
 # 1. IMPORT REQUIRED LIBRARIES
 # ============================================================
@@ -75,7 +74,6 @@ st.set_page_config(
 
 )
 
-
 # ============================================================
 # 3. APPLICATION TITLE
 # ============================================================
@@ -95,7 +93,6 @@ st.write(
     career roles using machine learning.
     """
 )
-
 
 # ============================================================
 # 4. SIDEBAR
@@ -125,7 +122,6 @@ with st.sidebar:
         "Supported formats: PDF and DOCX"
     )
 
-
 # ============================================================
 # 5. CV UPLOAD
 # ============================================================
@@ -142,7 +138,6 @@ uploaded_file = st.file_uploader(
     help="Upload a PDF or DOCX resume."
 
 )
-
 
 # ============================================================
 # 6. MAIN ANALYSIS
@@ -381,7 +376,6 @@ if uploaded_file is not None:
                 error
             )
 
-
 # ============================================================
 # 7. DISPLAY RESULTS
 # ============================================================
@@ -404,7 +398,6 @@ if "personality_result" in st.session_state:
         "report"
     ]
 
-
     # ========================================================
     # RESULTS HEADER
     # ========================================================
@@ -414,7 +407,6 @@ if "personality_result" in st.session_state:
     st.header(
         "📊 Candidate Analysis"
     )
-
 
     # ========================================================
     # 8. KEY METRICS
@@ -465,7 +457,6 @@ if "personality_result" in st.session_state:
             else "N/A"
 
         )
-
 
     # ========================================================
     # 9. PERSONALITY ANALYSIS
@@ -534,7 +525,6 @@ if "personality_result" in st.session_state:
 
     )
 
-
     # ========================================================
     # 10. EXTRACTED SKILLS
     # ========================================================
@@ -570,7 +560,6 @@ if "personality_result" in st.session_state:
             "No recognized skills were found."
         )
 
-
     # ========================================================
     # 11. SKILLS BY CATEGORY
     # ========================================================
@@ -596,7 +585,6 @@ if "personality_result" in st.session_state:
                         skills
                     )
                 )
-
 
     # ========================================================
     # 12. CAREER RECOMMENDATIONS
@@ -699,7 +687,6 @@ if "personality_result" in st.session_state:
 
             st.divider()
 
-
     # ========================================================
     # 13. EXECUTIVE SUMMARY
     # ========================================================
@@ -713,7 +700,6 @@ if "personality_result" in st.session_state:
             "executive_summary"
         ]
     )
-
 
     # ========================================================
     # 14. PROCESSED CV TEXT
@@ -735,7 +721,6 @@ if "personality_result" in st.session_state:
 
         )
 
-
     # ========================================================
     # 15. TEXT STATISTICS
     # ========================================================
@@ -750,7 +735,6 @@ if "personality_result" in st.session_state:
             ]
         )
 
-
     # ========================================================
     # 16. GENERATE DOWNLOADABLE REPORT
     # ========================================================
@@ -758,7 +742,6 @@ if "personality_result" in st.session_state:
     st.subheader(
         "📥 Download Candidate Report"
     )
-
 
     try:
 
@@ -801,7 +784,6 @@ if "personality_result" in st.session_state:
             f"Report download preparation failed: {error}"
         )
 
-
 # ============================================================
 # 17. INITIAL APPLICATION MESSAGE
 # ============================================================
@@ -811,7 +793,6 @@ else:
     st.info(
         "👆 Upload a PDF or DOCX CV above to begin the analysis."
     )
-
 
 # ============================================================
 # 18. FOOTER
