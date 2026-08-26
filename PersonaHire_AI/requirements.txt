@@ -1,0 +1,23 @@
+# ============================================================
+# PersonaHire AI - Required Python Packages
+# ============================================================
+
+# Web Application
+streamlit
+
+# Data Processing
+pandas
+numpy
+
+# Machine Learning
+scikit-learn
+joblib
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# CV / Document Processing
+pypdf
+python-docx
