@@ -1,23 +1,92 @@
 # ============================================================
-# PersonaHire AI - Required Python Packages
+# PersonaHire AI - Git Ignore
 # ============================================================
 
-# Web Application
-streamlit
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
 
-# Data Processing
-pandas
-numpy
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
 
-# Machine Learning
-scikit-learn
-joblib
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
-# Data Visualization
-matplotlib
-seaborn
-plotly
+# ============================================================
+# Dataset files
+# ============================================================
 
-# CV / Document Processing
-pypdf
-python-docx
+# Raw downloaded dataset
+data/raw/
+
+# Processed/generated datasets
+data/processed/
+
+# ============================================================
+# Model files
+# ============================================================
+
+# Trained model artifacts
+models/*.joblib
+models/*.pkl
+models/*.pickle
+
+# ============================================================
+# Generated reports
+# ============================================================
+
+reports/*.txt
+reports/*.pdf
+
+# ============================================================
+# Temporary/cache files
+# ============================================================
+
+.cache/
+data/raw/.cache/
+*.tmp
+*.temp
+
+# ============================================================
+# Python / testing
+# ============================================================
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================================================
+# IDE files
+# ============================================================
+
+.vscode/
+.idea/
+
+# ============================================================
+# Operating system files
+# ============================================================
+
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# Environment / secrets
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# API keys / credentials
+*.key
+*.pem
+
+# ============================================================
+# Streamlit
+# ============================================================
+
+.streamlit/secrets.toml
